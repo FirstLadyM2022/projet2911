@@ -39,7 +39,7 @@ if "input" not in st.session_state:
     st.session_state.input = ""
 def input_callback():
     st.session_state.input = st.session_state.my_input
-user_input = st.text_input("Entrer le primaryTitle du film: ", key="my_input",on_change=input_callback,args=None)
+user_input = st.text_input("Entrer le nom du film: ", key="my_input",on_change=input_callback,args=None)
 
 #st.text("your input is : " + st.session_state.my_input)
 #st.text("your input is: " + st.session_state.input)
